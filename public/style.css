@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  background-image: url("background.png");
 }
 
 header {
@@ -64,10 +65,11 @@ li a:hover, .dropdown:hover .dropbtn {
 
 
   border-radius: 20px;
-  min-height:51vh;
+  min-height:50vh;
   margin-top: 5px;
   border: 2px solid #000000;
   padding-bottom: 15px;
+  background-color: #FFF;
 }
 
 .about{
@@ -77,13 +79,13 @@ li a:hover, .dropdown:hover .dropbtn {
   min-width: 700px;
   margin: auto;
 
-
   border-radius: 20px;
 
   min-height:40vh;
   margin-top: 5px;
   border: 2px solid #000000;
   padding-bottom: 15px;
+  background-color: #FFF;
 }
 
 .web{
@@ -116,7 +118,7 @@ li a:hover, .dropdown:hover .dropbtn {
 .topic-card{
   display:flex;
   justify-content:space-between;
-
+  background-color: #D0D0D0;
   font-size: 18px;
   border-radius: 20px;
   flex: 1 32%;
@@ -215,6 +217,7 @@ li a:hover, .dropdown:hover .dropbtn {
   float: left;
   text-align: left;
   font-size: 14px;
+  font-family: "Comic Sans MS", cursive, serif;
 }
 
 .date-post{
@@ -234,7 +237,8 @@ li a:hover, .dropdown:hover .dropbtn {
   min-height:21vh;
   margin-top: 5px;
   border: 2px solid #000000;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
+  background-color: #FFF;
 }
 
 #topic-head{
