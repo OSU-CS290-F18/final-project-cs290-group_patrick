@@ -267,24 +267,31 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 .input{
   float: right;
-  height: 18px;
+  height: 20px;
   width: 452px;
+  font-family: "Comic Sans MS", cursive, serif;
+  font-size: 14px;
 }
 
 .input:focus {
-    border: 2px solid #458B00;
-    background-color: #D0D0D0;
+  font-size: 14.5px;
+  border: 2px solid #458B00;
+  background-color: #D0D0D0;
+
 }
 
 #input-post-txt{
   float: right;
   width: 450px;
   height: 90px;
+  font-family: "Comic Sans MS", cursive, serif;
+  font-size: 14px;
 }
 
 #input-post-txt:focus {
-    border: 2px solid #458B00;
-    background-color: #D0D0D0;
+  font-size: 14.5px;
+  border: 2px solid #458B00;
+  background-color: #D0D0D0;
 }
 
 .split{
@@ -332,6 +339,7 @@ li a:hover, .dropdown:hover .dropbtn {
   float: right;
   margin-left: 300px;
   padding-right: 20px;
+  font-family: "Comic Sans MS", cursive, serif;
 }
 
 .answer-creator{
