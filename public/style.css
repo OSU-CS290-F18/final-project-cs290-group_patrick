@@ -183,8 +183,10 @@ li a:hover, .dropdown:hover .dropbtn {
   padding-bottom: 10px;
   border: 1px solid #000000;
   text-align: left;
-  margin: 5px 15px 0px 15px;
+  margin: 10px 15px 0px 15px;
   background-color: #A0A0A0;
+
+
 }
 .answer{
   justify-content:space-between; 
