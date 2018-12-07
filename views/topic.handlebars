@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {{> head}}
+  <body>
+    {{> header}}
+    {{> nav}}
+    <main class="content">
+      <section id="posts">
+      
+        <section class="topic-content">
+
+        {{#each this}}
+          {{#if id}}
+            {{> topiccontent}}
+            {{#each posts}}
+              {{#if creator}}
+                {{> newauthor}}
+              {{else}}
+                {{> newPost}}
+              {{/if}}
+            {{/each}}
+          {{/if}}
+        {{/each}}
+
+        </section>
+    </main>
+    {{> comment}}    
+  </body>
+</html>

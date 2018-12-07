@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    {{> header}}    
+    {{> nav}}    
+    <main class="content">
+      <div class="title-container">
+        <p>List of all Topics</p>
+      </div>
+      <section id="posts">
+
+        {{#each this}}
+          {{#if id}}
+            {{> newTopic}}
+          {{/if}}
+        {{/each}}
+
+      </section>
+    </main>
+    {{> inputtopic}}
+  </body>
+</html>
