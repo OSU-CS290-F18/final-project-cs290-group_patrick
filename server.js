@@ -57,13 +57,12 @@ app.get('/about', function(req,res){
 });
 
 app.post('/newTopic', function (req, res, next) {
-  if (req.body && req.body.titel && req.body.author && req.body.date && req.body.text) {
+  if (req.body && req.body.random && req.body.titel && req.body.author && req.body.date && req.body.text) {
     
     var blogs = mongoDB.collection('blog');
-    var random = "" + Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000 + "";
-
+    
     blogs.insertOne({ 
-      "id": random,
+      "id": req.body.random.toString(),
       "titel": req.body.titel,
       "author": req.body.author,
       "date": req.body.date,
