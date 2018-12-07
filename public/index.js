@@ -1,7 +1,12 @@
+/*
+ * Name: Patrick J. Wurth
+ * Email: wurthp@oregonstate.edu
+ */
 function insertNewTopic() {
   var topic = document.getElementById('input-author-titel').value.trim();
   var author = document.getElementById('input-author-txt').value.trim();
   var text = document.getElementById('input-post-txt').value.trim();
+  var ran = "" + Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000 + "";
 
   if (!topic || !author || !text) {
     alert("You must fill in all of the fields!");
@@ -11,6 +16,7 @@ function insertNewTopic() {
     postRequest.open('POST', '/newTopic');
 
     var requestBody = JSON.stringify({
+      random: ran,
       titel: topic,
       author: author,
       date: gettime(),
@@ -20,6 +26,7 @@ function insertNewTopic() {
     postRequest.send(requestBody);
 
     var newTopicContext = {
+      id:ran,
       titel: topic,
       author: author,
       date: gettime(),
