@@ -8,8 +8,6 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 
-//var data = require('./data.json');
-
 var app = express();
 var port = process.env.PORT || 3000;
 
@@ -25,7 +23,6 @@ var mongoURL = "mongodb://" +
   mongoUsername + ":" + mongoPassword + "@" + mongoHost + ":" + mongoPort +
   "/" + mongoDBName;
 
-
 var mongoDB = null;
 
 var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
@@ -36,7 +33,6 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
 
 app.use(express.static('public'));
-
 
 app.get('/', function (req, res, next) {
   var topicCollection = mongoDB.collection('blog');
